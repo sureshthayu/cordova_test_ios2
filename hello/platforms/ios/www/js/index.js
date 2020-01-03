@@ -29,11 +29,6 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-        
-        document.getElementById("dialogAlert").addEventListener("touchend", dialogAlert);
-        document.getElementById("dialogConfirm").addEventListener("click", dialogConfirm);
-        document.getElementById("dialogPrompt").addEventListener("click", dialogPrompt);
-        document.getElementById("dialogBeep").addEventListener("click", dialogBeep);
     },
 
     // Update DOM on a Received Event
@@ -52,17 +47,3 @@ var app = {
 };
 
 app.initialize();
-
-function dialogAlert() {
-   var message = "I am Alert Dialog!";
-   var title = "ALERT";
-   var buttonName = "Alert Button";
-    
-    alert("dialogAlert");
-    
-   navigator.notification.alert(message, alertCallback, title, buttonName);
-   
-   function alertCallback() {
-      console.log("Alert is Dismissed!");
-   }
-}

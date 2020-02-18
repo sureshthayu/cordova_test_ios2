@@ -19,6 +19,7 @@
 		3FC0A95477324AE5B18FCD14 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE21D29E84A4BB79A652B19 /* CoreLocation.framework */; };
 		4237664F5B894C4D817CD3F3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07B5C83ACF412CA0EC4B48 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5699B13CEAFE4A3DA8B0913E /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231D37979C244648BD968D9F /* UIImage+CropScaleOrientation.m */; };
+		56CC3E3F23FCB1A6005AB090 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC3E3E23FCB1A6005AB090 /* test.swift */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		866D25F672564BE680E7A379 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF9F6F4490104CF1AD25A78E /* CDVNotification.bundle */; };
 		9CA758B89759453A97A96253 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847435ED95D40B482EA0113 /* AVFoundation.framework */; };
@@ -72,6 +73,8 @@
 		32CA4F630368D1EE00C91783 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		4F07B5C83ACF412CA0EC4B48 /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		50243456D9DE48A7B9BC01A6 /* CDVCamera.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCamera.m; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; };
+		56CC3E3D23FCB1A5005AB090 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
+		56CC3E3E23FCB1A6005AB090 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		5A93F10F68DA457BA43F7119 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5DE0BB4E262340FE8645A1D8 /* CDVCamera.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVCamera.h; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloWorld/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -110,6 +113,8 @@
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				56CC3E3E23FCB1A6005AB090 /* test.swift */,
+				56CC3E3D23FCB1A5005AB090 /* HelloWorld-Bridging-Header.h */,
 			);
 			name = Classes;
 			path = HelloWorld/Classes;
@@ -251,6 +256,7 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -338,6 +344,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				5699B13CEAFE4A3DA8B0913E /* UIImage+CropScaleOrientation.m in Sources */,
 				C84D2128A6FF44A3BA086D7E /* CDVCamera.m in Sources */,
+				56CC3E3F23FCB1A6005AB090 /* test.swift in Sources */,
 				31E60F8EA14845958B32F3A5 /* CDVJpegHeaderWriter.m in Sources */,
 				3190258060984F978D8A4393 /* CDVNotification.m in Sources */,
 			);
@@ -375,6 +382,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naksnaps.helloworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld/Classes/HelloWorld-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -398,6 +408,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naksnaps.helloworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld/Classes/HelloWorld-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

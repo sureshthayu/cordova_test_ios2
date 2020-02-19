@@ -20,6 +20,8 @@
 		4237664F5B894C4D817CD3F3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07B5C83ACF412CA0EC4B48 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5699B13CEAFE4A3DA8B0913E /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231D37979C244648BD968D9F /* UIImage+CropScaleOrientation.m */; };
 		56CC3E3F23FCB1A6005AB090 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC3E3E23FCB1A6005AB090 /* test.swift */; };
+		56CC3E4223FCB4A1005AB090 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 56CC3E4123FCB4A1005AB090 /* Classes */; };
+		56CC3E4423FCB4C5005AB090 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC3E4323FCB4C5005AB090 /* test2.swift */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		866D25F672564BE680E7A379 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF9F6F4490104CF1AD25A78E /* CDVNotification.bundle */; };
 		9CA758B89759453A97A96253 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847435ED95D40B482EA0113 /* AVFoundation.framework */; };
@@ -75,6 +77,8 @@
 		50243456D9DE48A7B9BC01A6 /* CDVCamera.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCamera.m; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; };
 		56CC3E3D23FCB1A5005AB090 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		56CC3E3E23FCB1A6005AB090 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		56CC3E4123FCB4A1005AB090 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; sourceTree = "<group>"; };
+		56CC3E4323FCB4C5005AB090 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 		5A93F10F68DA457BA43F7119 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5DE0BB4E262340FE8645A1D8 /* CDVCamera.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVCamera.h; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloWorld/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -114,6 +118,8 @@
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 				56CC3E3E23FCB1A6005AB090 /* test.swift */,
+				56CC3E4323FCB4C5005AB090 /* test2.swift */,
+				56CC3E4123FCB4A1005AB090 /* Classes */,
 				56CC3E3D23FCB1A5005AB090 /* HelloWorld-Bridging-Header.h */,
 			);
 			name = Classes;
@@ -309,6 +315,7 @@
 			files = (
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				56CC3E4223FCB4A1005AB090 /* Classes in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
 				866D25F672564BE680E7A379 /* CDVNotification.bundle in Resources */,
 			);
@@ -340,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				56CC3E4423FCB4C5005AB090 /* test2.swift in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				5699B13CEAFE4A3DA8B0913E /* UIImage+CropScaleOrientation.m in Sources */,
